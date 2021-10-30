@@ -1,18 +1,15 @@
 #include<stdio.h>
 int main(){
-    int a=0,b;
-    int num[10]={56,3,65,23,89,54,31,36,87,44};
-    for (int i = 0; i < 10; i++)
+    int i, large=0;
+    int num[10]={97, 88, 41, 103, 67, 89, 99, 55, 28, 115};
+    for (i = 0; i < 10; i++)
     {  
         
-        if (num[i]>a)
+        if (num[i]>large)
         {
-            a=num[i];
+            large=num[i];
         }        
     }
-    printf("The greatest value in the array is %d",a);
+    printf("The greatest element in the array is %d",large);
 
-    
-    
-    
 }
