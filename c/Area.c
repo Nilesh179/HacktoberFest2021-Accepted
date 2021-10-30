@@ -1,14 +1,12 @@
 #include<stdio.h>
-#include<math.h>
-
 #define PI 3.141
 
 int main(){
     float radius, area;
-    printf("Enter radius of circle\n");
+    printf("Enter radius of circle : ");
     scanf("%f", &radius);
-    /* Area of Circle = (PI * Radius * Radius) */
-    area = PI*pow(radius,2);
-    printf("Area of circle : %0.4f\n", area);
+    // Area of Circle = (PI * Radius * Radius) 
+    area = PI * radius * radius;
+    printf("Area of circle = %f\n", area);
     return 0;
 }
